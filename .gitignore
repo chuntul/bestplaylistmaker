@@ -1,0 +1,7 @@
+server/bin/
+server/include/
+server/lib/
+server/lib64/
+server/share/
+server/pyvenv.cfg
+client/node_modules/
