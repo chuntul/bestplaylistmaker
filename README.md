@@ -1,4 +1,5 @@
-BestPlaylistMaker (BPM) - a web app with Flask and Vue for creating playlists of songs you like, within a certain bpm range.
+# BestPlaylistMaker (BPM)
+A web app with Flask and Vue for creating playlists of songs you like, within a certain bpm range.
 
 Is it really the best playlist maker? Probably not. I did it for the name though.
 
