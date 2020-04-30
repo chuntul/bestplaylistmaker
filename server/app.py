@@ -7,6 +7,8 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
+
+#TODO: move routes for authorization into auth.py
 # help from https://github.com/spotify/web-api-auth-examples/blob/master/authorization_code/app.js
 # and https://stackoverflow.com/questions/57580411/storing-spotify-token-in-flask-session-using-spotipy
 
@@ -25,7 +27,7 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 # authorization-code-flow Step 1. Have your application request authorization; 
 # the user logs in and authorizes access
 @app.route("/login")
-def verify():
+def login():
     auth_url = f'https://accounts.spotify.com/authorize?client_id={CLI_ID}&response_type=code&redirect_uri={REDIRECT_URI}&scope={SCOPE}&show_dialog=true'
     print(auth_url)
     return redirect(auth_url)
